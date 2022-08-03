@@ -14,8 +14,17 @@ main {
     align-items: center;
 }
 
-main div {
+.toc {
     display: flex;
+    padding: 30px;
+    margin: 30px;
+    justify-content: space-around;
+}
+
+.toc section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
