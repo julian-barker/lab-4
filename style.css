@@ -1,0 +1,28 @@
+body {
+    background-color: salmon;
+    color: darkblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div {
+    display: flex;
+}
+
+footer {
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
