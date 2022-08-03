@@ -14,7 +14,7 @@ function colorScript() {
 
 function greet() {
     const x = document.getElementById('greeting').value;
-    document.getElementById('response').innerHTML = x;
+    document.getElementById('response').innerHTML = 'Hi, ' + x + '!';
 }
 
 function powers() {
