@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>The Best Recipes</title>
 </head>
 <body>
@@ -15,9 +16,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="https://talahahmad.github.io/Lab04-102/">Partner Site</a></li>
-                <li><a href="/">My Outdoors Blog</a></li>
-                <li><a href="/">My Movie Reviews</a></li>
+                <li><a href="https://talahahmad.github.io/Lab04-102/" class="externalLink">Partner Site</a></li>
+                <li><a href="/" class="externalLink">My Outdoors Blog</a></li>
+                <li><a href="/" class="externalLink">My Movie Reviews</a></li>
             </ul>
         </nav>
     </header>
@@ -70,7 +71,16 @@
                 </section>
             </div>
         </div>
-        
+        <button onclick="colorScript()">Change the background color?</button><br>
+        <div id="input">
+            <button onclick="greet()">Say Hi!</button><input type="text" id="greeting">
+        </div><br>
+        <div id="response"></div>
+        <div id="math">
+            <input type="text" id="arg1"> to the <input type="text" id="arg2"> power
+        </div><br>
+        <button onclick="powers()">calculate</button>
+        <div id="answer"></div>
     </main>
     <footer>
         <div>
