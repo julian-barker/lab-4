@@ -35,7 +35,6 @@ function colorScript() {
         } else {
             document.body.style.backgroundColor = '#' + x;
         }
-        
     }
 }
 
