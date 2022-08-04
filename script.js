@@ -46,8 +46,11 @@ function greet() {
 function powers() {
     let x = document.getElementById('arg1').value;
     let y = document.getElementById('arg2').value;
-    if (Number(x) == NaN || Number(y) == NaN || x === '' || y === '') {
-        alert('Invalid inputs. Please eneter numbers only!')
+    const a = Number(x);
+    const b = Number(y);
+    console.log(Number(x), Number(y));
+    if (isNaN(a) || isNaN(b) || x === '' || y === '') {
+        alert('Invalid inputs. Please enter numbers only!')
     } else {
         const z = Math.pow(x,y)
         const ans = x + ' to the ' + y + ' power = ' + z;
