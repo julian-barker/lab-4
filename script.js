@@ -13,8 +13,8 @@ function repeatImage() {
 }
 
 function colorScript() {
-    let x = prompt('Provide a hexadecimal color value, please \( ex. e044bb). Or type in random for a random color!')
-    if (x == 'random') {
+    let x = prompt('Provide a hexadecimal color value, please \( ex. e044bb). Or leave it blank for a random color!')
+    if (x === '') {
         const a = Math.floor(Math.random()*256);
         const b = Math.floor(Math.random()*256);
         const c = Math.floor(Math.random()*256);
