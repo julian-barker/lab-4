@@ -33,15 +33,13 @@ function greet() {
 function powers() {
     let x = document.getElementById('arg1').value;
     let y = document.getElementById('arg2').value;
-    if (x === '') {
-        x = 0;
+    if (Number(x) == NaN || Number(y) == NaN || x === '' || y === '') {
+        alert('Invalid inputs. Please eneter numbers only!')
+    } else {
+        const z = Math.pow(x,y)
+        const ans = x + ' to the ' + y + ' power = ' + z;
+        document.getElementById('answer').innerHTML = ans;
+        document.getElementById('arg1').value = '';
+        document.getElementById('arg2').value = '';
     }
-    if (y === '') {
-        y = 0;
-    }
-    const z = Math.pow(x,y)
-    const ans = x + ' to the ' + y + ' power = ' + z;
-    document.getElementById('answer').innerHTML = ans;
-    document.getElementById('arg1').value = '';
-    document.getElementById('arg2').value = '';
 }
