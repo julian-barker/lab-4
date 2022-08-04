@@ -7,8 +7,21 @@ function colorScript() {
         const bg = 'rgb(' + a + ',' + b + ',' + c + ')';
         console.log(bg);
         document.body.style.backgroundColor = bg;
-    } else {
-        document.body.style.backgroundColor = '#' + x;
+    } else if (x.length = 6) {
+        const dict = '0123456789abcdefABCDEF'
+        let valid = true;
+        for (let i = 0; i < 6; i++) {
+            if (!dict.includes(x[i])) {
+                valid = false;
+            }
+        }
+        if (!valid) {
+            alert('not a valid hex color value');
+            colorScript();
+        } else {
+            document.body.style.backgroundColor = '#' + x;
+        }
+        
     }
 }
 
