@@ -7,8 +7,8 @@ function repeatImage() {
     console.log(x);
     images = document.getElementById("images");
     for (let i = 0; i < x; i++) {
-        images.innerHTML += ("<div><img src=\"/images/food.jpeg\" alt=\"delicious foods\" width=\"300px\">" + (i+1) + "</div>");
-        console.log('adding image ' + (i+1));
+        images.innerHTML += ("<div><img src=\"/images/food.jpeg\" alt=\"delicious foods\" width=\"400px\">" + (i+1) + "</div>");
+        //console.log('adding image ' + (i+1));
     }
 }
 

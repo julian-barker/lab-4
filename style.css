@@ -67,6 +67,12 @@ h1 {
     padding: 8px;
 }
 
+#images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 main p {
     margin-top: 4px;
     margin-bottom: 4px;
