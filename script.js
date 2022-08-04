@@ -7,13 +7,13 @@ function repeatImage() {
     console.log(x);
     images = document.getElementById("images");
     for (let i = 0; i < x; i++) {
-        images.innerHTML += ("<div><img src='/images/food.jpeg' alt='delicious foods' width='400px'>" + (i+1) + "</div>");
+        images.innerHTML += ("<div><img src='images/food.jpeg' alt='delicious foods' width='400px'>" + (i+1) + "</div>");
         //console.log('adding image ' + (i+1));
     }
 }
 
 function colorScript() {
-    let x = prompt('Provide a hexadecimal color value, please \( ex. e044bb). Or type in random for a random color!',)
+    let x = prompt('Provide a hexadecimal color value, please \( ex. e044bb). Or type in random for a random color!')
     if (x == 'random') {
         const a = Math.floor(Math.random()*256);
         const b = Math.floor(Math.random()*256);
