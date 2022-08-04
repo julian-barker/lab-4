@@ -1,3 +1,17 @@
+function repeatImage() {
+    let x;
+    do
+        x = prompt('how many times should we display our image? (1-10 times)');
+    while ((x < 1) || (x > 10))
+    x = Math.floor(x);
+    console.log(x);
+    images = document.getElementById("images");
+    for (let i = 0; i < x; i++) {
+        images.innerHTML += ("<div><img src=\"/images/food.jpeg\" alt=\"delicious foods\" width=\"100px\">" + (i+1) + "</div>");
+        console.log('adding image ' + (i+1));
+    }
+}
+
 function colorScript() {
     let x = prompt('Provide a hexadecimal color value, please \( ex. e044bb). Or type in random for a random color!',)
     if (x == 'random') {
