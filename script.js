@@ -4,7 +4,7 @@ function repeatImage() {
         x = prompt('how many times should we display our image? (1-10 times)');
     while ((x < 1) || (x > 10) || isNaN(Number(x)))
     x = Math.floor(x);
-    console.log(x);
+    //console.log(x);
     images = document.getElementById("images");
     for (let i = 0; i < x; i++) {
         images.innerHTML += ("<div><img src='./images/food.jpeg' alt='delicious foods' width='400px'>" + (i+1) + "</div>");
